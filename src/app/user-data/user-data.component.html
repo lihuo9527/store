@@ -1,0 +1,27 @@
+<app-title back="/home" text="个人中心"></app-title>
+
+<div class="container" >
+  <div class="col-xs-12" >
+  <img class="userface" [src]="userface">
+  <h4>hello，{{username}}</h4>
+  </div>
+</div>
+
+<div class="money container">
+  <a>
+  <i class="glyphicon glyphicon-jpy"></i> 
+  <p>余额：{{money}}</p>
+  </a>
+</div>
+
+<div *ngFor="let fn of fns" class="order_form container">
+  <a routerLink="{{fn.router}}">
+   <i class="{{fn.icon}}"></i> 
+   <p>{{fn.text}}</p>
+   <span class="glyphicon glyphicon-menu-right"></span>
+   <span  *ngIf = "fn.text2" style="margin-top:2px;">{{fn.text2}}</span>
+  </a>
+</div>
+<hr class="margin_0px">
+
+<button class="back-btn" (click)="back()"> 退出  </button>

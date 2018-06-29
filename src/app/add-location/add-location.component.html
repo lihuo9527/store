@@ -1,0 +1,29 @@
+<app-title back="/my-address" text="管理收货地址"></app-title>
+<alert *ngIf="alert_value!=''" [type]="alert_color">{{alert_value}}</alert>
+<app-city [province_]="data[0]"  [city_]="data[1]"  [county_]="data[2]"  [parameter]="parameter" (address)="addressdata($event)"></app-city>
+<div class="container col-xs-12 userdata">
+  <div class="row"  style="margin: 0;">
+    <input [(ngModel)]="item.text" placeholder="(必填)请输入详细地址">
+  </div>
+  <div class="row"  style="margin: 0;">
+    <input [(ngModel)]="item.name" placeholder="(必填)请输入收货人姓名">
+  </div>
+  <div class="row" style="margin: 0;">
+    <input [(ngModel)]="item.number" placeholder="(必填)请输入收货人联系电话">
+  </div>
+</div>
+<div class="container col-xs-12">
+  <div class="checkbox" style="margin-top:20px;">
+    <label style="font-size: 16px;">
+      <input type="checkbox"  [(ngModel)]="checked"  [checked]="checked" style="height: 20px;width:20px;margin-top:0px;"> 设置为默认收货地址
+    </label>
+  </div>
+</div>
+<div *ngIf="parameter" class="container col-xs-4" style="margin-top:10px;">
+  <button type="submit" class="btn btn-danger"  (click)="delete()">删除收货地址</button>
+</div>
+<div class="container col-xs-12">
+ <div style="height:60px;width: 100%;"></div>
+</div>
+<app-masking-out *ngIf="masking" text="正在发送请求中,请稍后操作！"></app-masking-out>
+<button class="back-btn"  (click)="add()"> 保存地址 </button>

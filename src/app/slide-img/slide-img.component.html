@@ -1,0 +1,13 @@
+
+<div  class="imgs">
+  <a  [routerLink]="img.link" *ngFor="let img of imgs;let i=index">
+    <img src="{{img.url}}" alt="" title="{{i}}" class="img"
+    (SlideImgDirective)="Change($event)" 
+    (touchstart)="touch_start()"
+    (touchend)="touch_end()"
+    >
+  </a>
+  <div class="slide_index">
+   {{img_index}}/{{img_length}}
+  </div>
+ </div>

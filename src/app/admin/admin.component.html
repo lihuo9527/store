@@ -1,0 +1,15 @@
+<app-title back="/home" text="管理后台"></app-title>
+
+<div class="container col-xs-12 col-sm-4 col-md-4 col-lg-4" style="margin-top: 5px;margin-bottom: 5px;">
+<a class="col-xs-12" [routerLink]="['add-money']"  routerLinkActive="active" >用户充值</a>
+</div> 
+
+<div class="container col-xs-12 col-sm-4 col-md-4 col-lg-4" style="margin-top: 5px;margin-bottom: 5px;">
+<a class="col-xs-12" [routerLink]="['add-commodity']"  routerLinkActive="active">添加商品</a>
+</div> 
+
+<div class="container col-xs-12 col-sm-4 col-md-4 col-lg-4" style="margin-top: 5px;margin-bottom: 5px;">
+<a class="col-xs-12"  [routerLink]="['admin-order-form']"  routerLinkActive="active">管理订单</a>
+</div> 
+
+ <router-outlet></router-outlet>

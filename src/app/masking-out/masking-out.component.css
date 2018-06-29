@@ -1,0 +1,11 @@
+
+.masking2{
+  width: 100%;z-index:8;position:fixed;top:0;left: 0;opacity: 0.6;background: black;
+}
+.masking{
+    width: 100%;z-index:8;position:fixed;top:0;left: 0; text-align: center;
+}
+.masking div{
+    color:#fff !important;margin-top:80%;font-size: 16px;
+}
+

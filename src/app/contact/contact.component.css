@@ -1,0 +1,10 @@
+.btn{
+  width: 100%;position:fixed;bottom:0px; border: 1px solid crimson;background:#fff;color: crimson;height: 50px;font-size: 16px;border-radius:2px; z-index: 3; line-height: 37px;
+}
+
+a{
+    text-decoration: none;vertical-align:middle;
+}
+p{
+    margin-bottom:0;margin-top:5px;color: crimson;
+}

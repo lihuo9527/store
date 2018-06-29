@@ -1,0 +1,40 @@
+
+.tabs li{
+    float: left;width: 20%;text-align: center;margin-bottom: 10px;
+}
+.tabs{
+    border-bottom: solid 1px #d7d7d7;background: #fff;list-style: none;
+}
+.tabs li:hover{
+  color: red;
+}
+.tabs-container{
+    position:relative;top:10px;width:100%;z-index:3;
+}
+.order_form{
+  border-bottom:1px solid #eeeeee;  border-top:1px solid #eeeeee;padding-top:7px; margin-bottom: 10px;padding: 0;
+}
+.order_form i{
+    color: cornflowerblue;margin-right:10px;font-size: 16px;float: left;padding-top:3px;
+}
+.order_form_list{
+    width: 100%;
+}
+.order_form_list li{
+    padding-top:7px;padding-bottom:7px; 
+}
+.store_name{
+ font-size: 14px !important;display: inline-block;margin:0;float:left;
+}
+.state{
+ float:right;font-size: 12px;line-height:22px;color:orange;
+}
+.store_icon{
+    color: #798188 !important;font-size:18px;margin-left:5px;margin-top:-1px;
+}
+.delete_btn{
+    border: 1px solid crimson;background:#fff;color: crimson;height:30px;border-radius:2px;margin-right:0px;
+}
+.make{
+  width: 100%;height: 120px;background: #000000;text-align: center;color: white;padding-top: 50px;opacity: 0.5;
+}

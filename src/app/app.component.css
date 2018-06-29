@@ -1,0 +1,60 @@
+.float_left{
+    float:left;
+}
+.float_right{
+    float:right;
+}
+.row{
+    padding: 0;margin: 0;
+}
+h3{
+    margin-top:5px;
+    margin-bottom: 5px; 
+    margin-left:5px; 
+}
+.color_ffffff{
+    color:#ffffff !important;
+}
+.background_blue{
+    background: dodgerblue;
+}
+.opacity_80{
+    opacity:0.8;filter:alpha(opacity=80);
+}
+.border_0{
+    border-radius:0px; 
+}
+ul{
+    padding: 0;
+}
+ul,dl,ol{
+    list-style: none;
+}
+img{
+ padding: 0;
+}
+a{
+    text-decoration: none;
+}
+.margin_0px{
+    margin: 0;
+}
+.padding_0px{
+    padding: 0;
+}
+input{
+    outline: none;
+}
+input::-webkit-input-placeholder {
+    font-size:15px;
+}
+input:-moz-placeholder {
+   font-size:15px;
+}
+input::-moz-placeholder {
+   font-size:15px;
+}
+
+input:-ms-input-placeholder {
+    font-size:15px;
+}

@@ -1,0 +1,11 @@
+<div class="alert2">
+</div>
+<div class="alert">
+  <div>
+    <h5 class="glyphicon glyphicon-comment"></h5>
+    <p>{{text}}</p>
+    <button *ngIf="text=='余额不足!'||text=='支付失败,请检查网络环境!'"><a > 联系客服</a></button>
+    <button *ngIf="text=='支付成功!'"><a routerLink="/user-order-form"> 查看订单</a></button>
+    <button > <a (click)="back()">  返回</a></button>
+  </div>
+</div>

@@ -1,7 +1,6 @@
 {
   "project": {
-    "version": "1.0.0-beta.28.3",
-    "name": "demo3"
+    "name": "demo"
   },
   "apps": [
     {

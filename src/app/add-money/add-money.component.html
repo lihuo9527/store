@@ -1,0 +1,14 @@
+<div class="container col-xs-12">
+  <div class="row" style="margin-top:10px;margin-bottom: 10px;">
+    <span>用户名：</span>
+    <input [(ngModel)]="username" type="text">
+  </div>
+  <div class="row" style="margin-top:10px;margin-bottom: 10px;">
+    <span>充值金额</span>
+    <input [(ngModel)]="addmoney" type="text">
+  </div>
+</div>
+<div class="container col-xs-12">
+<button class="btn  btn-lg" (click)="add()">充值</button>
+<button class="btn  btn-lg" (click)="inquiry()">查询</button>
+</div>

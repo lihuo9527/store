@@ -1,0 +1,15 @@
+.userdata input{
+   padding-left:10px; border: none;height:40px;font-size: 16px;width: 100%;margin-top: 10px; outline: none;border-radius:3px;border:  2px solid #155492;color: black;
+}
+.back-btn{
+ width:100%;padding-left: 0px;padding-right: 0px;position:fixed;bottom:0px; border: 1px solid crimson;background:#fff;color: crimson;height: 50px;font-size: 20px;border-radius:2px; z-index: 3;left: 0;
+}
+.alert{
+    border-radius:0;position:fixed;top:0;left:0;width: 100%;z-index: 5;
+}
+.alert-red-color{
+    background: crimson;border: 1px solid crimson;color: white;opacity: 0.9;
+}
+.alert-green-color{
+    background: dodgerblue;border: 1px solid green;color: #fff;opacity: 0.9;
+}

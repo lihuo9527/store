@@ -1,0 +1,51 @@
+.order_form{
+  border-bottom:1px solid #eeeeee;  border-top:1px solid #eeeeee;width: 100%;padding-top:7px; margin-bottom: 10px;padding: 0;
+}
+.order_form i{
+    color: cornflowerblue;margin-right:10px;font-size: 16px;float: left;padding-top:3px;
+}
+.store_name{
+ font-size: 14px !important;display: inline-block;margin:0;float:left;
+}
+.store_icon{
+    color: #798188 !important;font-size:18px;margin-left:5px;margin-top:-1px;
+}
+.make{
+  width: 100%;height: 120px;background: #000000;text-align: center;color: white;padding-top: 50px;opacity: 0.5;
+}
+.delete_btn{
+    border: 1px solid crimson;background:#fff;color: crimson;border-radius:2px;margin-right:5px;float: right;
+}
+.commodity_title{
+    height:40px;overflow:hidden;-webkit-line-clamp:2;display:-webkit-box;-webkit-box-orient:vertical;color: black;
+}
+.commodity_accounts span{
+    padding: 0;padding-top:12px;padding-bottom:10px;font-size: 16px;
+}
+.commodity_accounts button{
+   padding-top:10px;padding-bottom:12px;background: crimson;color:white;border: none;
+}
+.commodity_accounts{
+ width:100%;position:fixed;bottom:0;border-top: 1px solid #eeeeee;font-size: 15px;color:black;z-index: 3;background:#f5f5f5;
+}
+.box{
+    display:flex !important;align-items:center;justify-content: center;
+}
+.address{
+    width: 100%;position: relative;margin-bottom: 10px;border-bottom: 1px solid #eeeeee;
+}
+.address a{
+    color: #666;
+}
+.address p{
+    font-size:14px;margin-right:20px;margin-left:15px;
+}
+.title{
+ width:100%;margin: 0;padding: 0; position:fixed;top:0;padding-top:10px;padding-bottom:10px;text-align: center;background: #f9f9f9;color: #616161;font-size: 22px;border-bottom: solid 1px #d7d7d7;z-index:3;right:0;
+}
+.back{
+    position:absolute; top:10px;left:10px;width: 40px;text-align: center;color: gray;
+}
+a{
+    text-decoration: none;
+}

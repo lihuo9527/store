@@ -1,0 +1,58 @@
+<app-title back="/home" text="用户注册"></app-title>
+
+<div class="container col-xs-10 col-xs-push-1 user_container" >
+  <label for="UserName" class="col-xs-2  text-right margin_0px">
+    <h4 class="glyphicon glyphicon-user  text-center" ></h4>
+  </label>
+  <input [(ngModel)]="user.name"
+        placeholder="账号：手机号/邮箱" 
+        id="UserName"
+        minlength="6"
+        required
+       class="col-xs-10 PassWord">
+</div>
+
+<div class="container  col-xs-10 col-xs-push-1 user_container" >
+  <label for="PassWord" class="col-xs-2  text-right  margin_0px">
+    <h4 class="glyphicon glyphicon-lock text-center"></h4>
+  </label>
+  <input [(ngModel)]="user.password"
+        type="password"
+        placeholder="密码：6-30位数字/字母"
+        id="PassWord"
+        minlength="6"
+        required
+        class="col-xs-10 PassWord">
+</div>
+
+<div class="container  col-xs-10 col-xs-push-1 user_container">
+  <label for="PassWord1" class="col-xs-2 text-right margin_0px">
+    <h4 class="glyphicon glyphicon-lock text-center"></h4>
+  </label>
+  <input [(ngModel)]="user.password1"
+        type="password"
+        placeholder="请再次确认密码"
+        id="PassWord1"
+        minlength="6"
+        required
+        class="col-xs-10  PassWord">
+</div>
+<app-masking-out *ngIf="masking" text="正在提交申请,请稍等待！"></app-masking-out>
+
+<!--<div class="container  col-xs-10 col-xs-push-1 padding_0px" >
+  <button class="password2 col-xs-6" style="height: 40px;">获取手机验证码</button>
+  <input [(ngModel)]="user.password2"
+        type="password"
+        placeholder="请输入验证码"
+        minlength="6"
+        required
+        class="col-xs-6 PassWord">
+</div>-->
+
+
+<button class="login-btn container col-xs-10 col-xs-push-1 "(click)="UserRegister()">注册</button>
+
+
+<button class="register-btn container col-xs-10 col-xs-push-1 "><a routerLink="/login">登录</a> </button>
+
+<alert  *ngIf="alert_value!=''" [type]="alert_color">{{alert_value}}</alert>

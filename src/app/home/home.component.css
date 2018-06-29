@@ -1,0 +1,77 @@
+home {
+ 
+}
+
+@media (min-width: 320px) and (max-width:768px) { 
+
+}
+
+.search-container-input::-webkit-input-placeholder {
+    color:#fff;font-size: 13px;
+}
+
+.search-container-input:-moz-placeholder {
+    color: #fff;font-size: 13px;
+}
+.search-container input::-moz-placeholder {
+    color: #fff;font-size: 13px;
+}
+
+.search-container input:-ms-input-placeholder {
+    color: #fff;font-size: 13px;
+}
+.search-container-input2::-webkit-input-placeholder {
+    color: black !important;
+}
+.search-container-input2::-moz-input-placeholder {
+    color: black !important;
+}
+.search-container-input2:-ms-input-placeholder {
+    color: black !important;
+}
+.search-container-input2:-moz-input-placeholder {
+    color: black !important;
+}
+.search-container{
+    position:fixed;top:0px;height:46px;width:100%;z-index:6;
+}
+.search-container-div{
+    height: 70%;border:solid 1px white;margin:7px auto;background: rgba(255,255,255,0.5);padding:0;
+}
+.search-container-div input{
+    background:rgba(255,255,255,0);height:100%;outline: none;border: none;
+}
+.background-red{
+  background: crimson;transition: 1s;
+}
+.background-white{
+    background: white;transition: 1s;
+}
+.color-black{
+    color: black !important;
+}
+.search{
+    margin-top:4px;color: white;font-size: 20px;
+}
+.phone{
+    color:#fff;margin-top:4px;padding-left:5px;font-size: 20px;
+}
+.login{
+    padding: 0;text-align: center;color:white;padding-top:7px; padding-left: 2%;
+}
+.commodity_title{
+    height:40px;overflow:hidden;-webkit-line-clamp:2;display:-webkit-box;-webkit-box-orient:vertical;
+}
+.commodity_price h4{
+    margin-bottom:6px;margin-top:10px; 
+}
+.commodity1_title{
+    height:34px;overflow:hidden;font-size: 13px;-webkit-line-clamp:2;display:-webkit-box;-webkit-box-orient:vertical;
+}
+.fixed-bottom{
+  height: 50px;width: 100%;
+}
+
+.scrollbox::-webkit-scrollbar { height: 1px;}/* 滚动槽 */
+.scrollbox::-webkit-scrollbar-track {   -webkit-box-shadow: inset 0 0 6px rgba(255,255,255,1); }/* 滚动条滑块 */
+.scrollbox::-webkit-scrollbar-thumb {     background: rgba(255,255,255,1); -webkit-box-shadow: inset 0 0 6px rgba(255,255,255,1);}/*.scrollbox::-webkit-scrollbar-thumb:window-inactive {    background: rgba(255,0,0,0.4);}*/

@@ -1,0 +1,47 @@
+<div [ngClass]="{'background-red':scrollTop>=130}" class="search-container col-xs-12">
+  <div [ngClass]="{'background-white':scrollTop>=130}" class="container col-xs-12 search-container-div">
+   <span [ngClass]="{'color-black':scrollTop>=130}" class="col-xs-2 phone glyphicon glyphicon-phone"></span>
+   <input [ngClass]="{'search-container-input2':scrollTop>=130}"  class="col-xs-8 search-container-input" placeholder="输入搜索商品类/名称">
+   <span [ngClass]="{'color-black':scrollTop>=130}"  class="col-xs-2 search glyphicon glyphicon-search text-right"></span>
+  </div>
+</div>
+
+<!--移动端轮播-->
+<app-slide-img [imgs]='picture' slide='start' setheight="true"> </app-slide-img>
+<!--移动端轮播-->
+
+
+<div *ngFor="let data of items" class="container col-xs-12 padding_0px" style="margin-bottom:5px;">
+  <img width="100%" [src]="data.title">
+   <div *ngFor="let item of data.container" class="col-xs-6 padding_0px" style="border:#eee 1px solid">
+       <a class="row" [routerLink]="item.Link">
+          <div class="col-xs-6 padding_0px" style="margin-top:10px;">
+            <span style="padding-left: 5px;color:black;">{{item.text}}</span>
+            <p   style="padding-left: 5px;padding-top: 10px;color: #686868;font-size: 12px;margin-bottom:7px;">{{item.text2}}</p>
+          </div>
+          <div class="col-xs-6 padding_0px" >
+            <img width="90%" [src]="item.picture">
+          </div>
+       </a>
+    </div>
+</div>
+
+<div class="container col-xs-12" style="background: crimson;color: white;margin-top:2px;">
+  <h5>今日推荐</h5>
+</div>
+
+<div class="container col-xs-12" style="background: #eeeeee;padding: 0;margin: 0;">
+  <div *ngFor="let commodity of commoditys"class="col-xs-6" style="background: #fff;padding: 0;border: solid 2px #eeeeee;">
+    <div class="row">
+    <a [routerLink]="['/commodity',commodity.key]">
+    <img width="100%"  [src]="commodity.picture">
+    <div class="commodity1_title" style="margin-bottom: 0;padding-left: 5px;">{{commodity.title}}</div>
+    <h4 style="color:crimson;text-align: right;padding-right: 10px;margin-top:5px;margin-bottom: 5px;">￥{{commodity.price}}</h4>
+    </a>
+    </div>
+  </div>
+</div>
+
+
+<div class="container col-xs-12 fixed-bottom"></div>
+<app-index-nav></app-index-nav>

@@ -1,0 +1,11 @@
+<div class="container col-xs-12">
+<select class="row col-xs-12" [(ngModel)]="province_" (change)="province_event()" style="padding: 0;height: 40px;">
+  <option *ngFor="let data of province" [value] ="data">{{data}}</option>
+</select>
+<select class="row col-xs-12"  [(ngModel)]="city_"  (change)="city_event()"  style="padding: 0;height: 40px;">
+  <option *ngFor="let data of city" [value] ="data">{{data}}</option>
+</select>
+<select class="row col-xs-12" [(ngModel)]="county_" (change)="county_event()" style="padding: 0;height: 40px;">
+  <option *ngFor="let data of county" [value] ="data">{{data}}</option>
+</select>
+</div>

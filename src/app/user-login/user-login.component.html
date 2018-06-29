@@ -1,0 +1,36 @@
+<app-title back="/home" text="用户登录"></app-title>
+
+<div class="container col-xs-10 col-xs-push-1" style="border: solid 1px #eeeeee;margin-bottom:10px; margin-top:20px;">
+  <label for="UserName" class="col-xs-3 text-right margin_0px">
+    <h4 class="glyphicon glyphicon-user  text-center" style="padding:0;color:#666666;"></h4>
+  </label>
+  <input [(ngModel)]="user.name"
+        placeholder="请输入手机号/邮箱"
+        id="UserName"
+        minlength="11"
+        required
+        class="col-xs-9 PassWord">
+</div>
+
+<div class="container col-xs-10 col-xs-push-1" style="border: solid 1px #eeeeee;margin-bottom:10px;">
+  <label for="PassWord" class="col-xs-3 text-right margin_0px">
+    <h4 class="glyphicon glyphicon-lock text-center"style="padding:0;color:#666666;"></h4>
+  </label>
+  <input [(ngModel)]="user.password"
+        type="password"
+        placeholder="请输入密码"
+        id="PassWord"
+        minlength="6"
+        required
+        class="col-xs-9 PassWord">
+</div>
+
+<div class="container text-center">
+<button class="login-btn" (click)="UserLogin()">登录</button>
+</div>
+<div class="container text-center">
+<button class="register-btn"><a routerLink="/register"> 还没有账户?点击注册 </a> </button>
+</div>
+<app-masking-out *ngIf="masking" text="正在登录,请稍等待！"></app-masking-out>
+<alert *ngIf="alert_value!=''" [type]="alert_color">{{alert_value}}</alert>
+

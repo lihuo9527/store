@@ -1,0 +1,12 @@
+.index_nav{
+    width: 100%;height: 49px;position:fixed;bottom:0;background:#eeeeee;z-index: 3;
+}
+.index_nav a{
+    padding-top:3px;
+}
+.index_nav i{
+    font-size:20px;margin-top:2px;color:black;
+    }
+.index_nav span{
+    color:black;
+}

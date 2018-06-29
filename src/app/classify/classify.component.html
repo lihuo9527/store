@@ -1,0 +1,35 @@
+<app-title back="/home" text="商品分类"></app-title>
+
+<div class="container col-xs-12 padding_0px">
+ <div id="classname" class="col-xs-3 padding_0px text-center" style="overflow: auto;">
+  <div  *ngFor="let class of classes" (click)="classify(class.text)" class="row nav_a" style="padding-top:10px;padding-bottom:10px;border-bottom: 1px solid #eee; ">
+    <a> {{class.text}} </a>
+  </div>
+ </div>
+
+ <div class="col-xs-9 classcontainer" style="padding: 0;padding-top:3px;background: #f5f5f5;">
+     <ul class="margin_0px" *ngIf="state">
+      <li *ngFor='let commodity of commoditys;' style="padding-left:3px;padding-right:3px;"class="row">
+        <a  (click)="gocommodity(commodity.key)" class="row" >
+          <img class="col-xs-5" [src]="commodity.picture" height="100px" width="100px">
+          <div class="col-xs-7" style="padding-right:0;">
+            <div class="commodity_title">
+             {{commodity.title}}
+            </div>
+            <div class="row">
+              <span class="col-xs-8 commodity_price text-left" style="padding:0;">￥{{commodity.price}}</span>
+              <span class="col-xs-4 commodity_mode text-left" style="padding:0;">{{commodity.mode}}</span>
+            </div>
+            <div class="row">
+              <h6 class="col-xs-8 text-left"style="padding:0;margin-bottom:4px;color:#332c2c;"> {{commodity.purchasingvolume}}人付款</h6> 
+              <h6 class="col-xs-4 text-left" style="padding:0;margin-bottom:4px;color:#332c2c;"> {{commodity.address}}</h6> 
+            </div>
+          </div>
+         </a>
+       <div class="row padding_0px">
+          <hr style="border-top: 1px solid #eee;margin: 0;margin-bottom:5px;">
+       </div>
+      </li>
+    </ul>
+ </div>
+</div>

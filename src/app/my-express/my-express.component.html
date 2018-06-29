@@ -1,0 +1,25 @@
+<app-title back="/user-data" text="订单物流查询"></app-title>
+
+<div class="make" *ngIf="state">目前还没有可以查询的物流信息噢</div>
+
+<div class="order_form col-xs-12" *ngFor="let data of datas;let i=index" >
+  <div class="container" style="margin-bottom:5px;padding-top:5px;">
+   <i class="glyphicon glyphicon-fire"></i> 
+   <p class="store_name">solo官方旗舰店</p>
+   <i class="glyphicon glyphicon-menu-right store_icon" ></i> 
+   <span class="state">{{data.state}}</span>
+  </div>
+ <div class="container" style="background: #f5f5f5;">
+    <img class="col-xs-3" [src]="data.picture" style="width:25%;padding: 0;">
+    <h6 class="col-xs-6" style="width:50%;">{{data.title}}</h6>
+    <h6 class="col-xs-3 text-right" ><p>￥{{data.unitprice}}</p><span>x{{data.quantity}}</span></h6>
+ </div>
+ <div class="container" style="margin-bottom:7px; padding-top:7px;">
+   <span class="col-xs-4 text-center" style="padding: 0">共计{{data.quantity}}件商品</span>
+     <span class="col-xs-4 text-center" style="padding: 0">合计:￥{{ data.totalsum }}</span>
+      <span class="col-xs-4 text-center" style="padding: 0">(含运费￥{{data.TransportationExpenses }})</span>
+ </div>
+<div *ngIf="data.state!='已付款'" class="container" style="border-top:1px solid #eeeeee;padding-top:5px;margin-bottom:5px; ">
+    <button *ngIf="data.state=='发货中'||data.state=='交易成功'" class="col-xs-6 col-xs-push-6 delete_btn" (click)="ViewExpress(i)"> 查看物流信息</button>
+</div>
+</div>

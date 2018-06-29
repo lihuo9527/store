@@ -1,0 +1,21 @@
+.PassWord{
+    border: none;height:40px;font-size: 18px;
+}
+.login-btn{
+    width: 90%;margin-top:10px;border: 1px solid crimson;background:#fff;color: crimson;height: 50px;font-size: 20px;border-radius:2px;   
+}
+.register-btn{
+    width: 90%;margin-top:10px;background:#fff;color: crimson;border: 1px solid crimson;height: 50px;font-size: 20px;border-radius:2px;
+}
+.register-btn a{
+   color: crimson;
+}
+.alert{
+    border-radius:0;position: absolute;top:0;left:0;width: 100%;z-index: 5;
+}
+.alert-red-color{
+    background: crimson;border: 1px solid crimson;color: white;opacity: 0.9;
+}
+.alert-green-color{
+    background: limegreen;border: 1px solid  green;color: #fff;opacity: 0.9;
+}

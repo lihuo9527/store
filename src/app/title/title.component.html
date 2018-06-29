@@ -1,0 +1,6 @@
+<h4 *ngIf="text" class="title container" >
+<a  *ngIf="back" class ='glyphicon glyphicon-menu-left back'  [routerLink] = "back" ></a>
+<a  *ngIf="!back" class ='glyphicon glyphicon-menu-left back' (click)="backpage()" ></a>
+    {{text}}
+</h4>
+<div style="height: 45px;width: 100%;position: relative;"></div>

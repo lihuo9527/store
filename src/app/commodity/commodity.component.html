@@ -1,0 +1,96 @@
+<div class="container" style="position:fixed;top:0;left:0;width: 100%;z-index:4;padding: 0;">
+  <a class='glyphicon glyphicon-menu-left back'  (click)="back()" ></a>
+ <div class="text-center  nav_container" >
+   <div class="row">
+      <h5 class='col-xs-3 col-xs-push-2' >商品</h5>
+      <h5 class='col-xs-3 col-xs-push-2' >详细</h5>
+      <h5 class='col-xs-3 col-xs-push-2' >评价</h5>
+   </div>
+ </div>
+</div>
+
+<div style="height:36px;width: 100%;"></div>
+
+<app-slide-img  setheight="false" [imgs]="commodity.pictures"></app-slide-img>
+
+<div style="border:1px solid #e3e3e5;margin-top:2px;">
+  <div style="margin-top:5px;margin-bottom: 5px;margin-left:10px; ">
+  <span style="background: #f23030;color: white;">自营</span>
+  <span class="title-text">{{commodity.title}}</span>
+  </div>
+  <div class="price">
+  <p class="big_price">￥{{commodity.bigprice}}.</p>
+  <p class="small_price">{{commodity.smallprice}}</p>
+  </div>
+  <p style="margin-left:10px;">运费(￥0.00)</p>
+<div *ngIf="commodity.css.length>0" class="container col-xs-12" style="margin-top:10px;">
+   <p class="glyphicon glyphicon-hand-down">点击下方选择款式-型号</p>
+   <select  class="col-xs-12"  [(ngModel)]="commodity.model_" (change)="model_event()" style="padding: 0;margin-top:0;height: 40px;">
+   <option *ngFor="let model of commodity.css" [value] ="model">{{model}}</option>
+  </select>
+</div>
+  <!--<div class="act">{{commodity.act}}</div>-->
+</div>
+<div class="container col-xs-12">
+<table class="table table-bordered">
+  <caption>商品参数</caption>
+  <tbody>
+    <tr>
+      <td class="col-xs-4">描述:</td>
+      <td class="col-xs-8">{{commodity.bewrite}}</td>
+    </tr>
+    <tr>
+      <td class="col-xs-4">品牌:</td>
+      <td class="col-xs-8">{{commodity.brand}}</td>
+    </tr>
+    <tr>
+      <td class="col-xs-4">型号:</td>
+      <td class="col-xs-8">{{commodity.model}}</td>
+    </tr>
+    <tr>
+      <td class="col-xs-4">包装体积:</td>
+      <td class="col-xs-8">{{commodity.volume}}</td>
+    </tr>
+    <tr>
+      <td class="col-xs-4">功能:</td>
+      <td class="col-xs-8">{{commodity.function}}</td>
+    </tr>
+    <tr>
+      <td class="col-xs-4">适用对象:</td>
+      <td class="col-xs-8">{{commodity.Applicable}}</td>
+    </tr>
+    <tr>
+      <td class="col-xs-4">保质期:</td>
+      <td class="col-xs-8">{{commodity.quality}}</td>
+    </tr>
+    <tr>
+      <td class="col-xs-4">产地:</td>
+      <td class="col-xs-8">{{commodity.place}}</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+<hr style="width: 100%;margin:0;">
+
+<div *ngFor="let picture of pictures"  class="container col-xs-12 padding_0px">
+<img [src]="picture" width="100%">
+</div>
+
+<h3 style="color: crimson;padding-left:10px;padding-right:10px;margin-top:10px;margin-bottom: 10px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{other}}</h3>
+
+<div class="container col-xs-12" style="width: 100%;height: 56px;"></div> 
+<footer class="footer row">
+
+  <a routerLink="/contact" class="col-xs-4 text-center contact">
+     <span class=" " >联系客服</span>
+    </a>
+    <a class="col-xs-4 text-center shopping_car"  (click)="add()">
+     <span class=" " >加入购物车</span>
+    </a>
+    <a class="col-xs-4 text-center buy"  (click)="buy()" >
+     <span class=" " >立即购买</span>
+    </a>
+</footer>
+
+<app-masking-out *ngIf="masking" [text]="backtext"></app-masking-out> 

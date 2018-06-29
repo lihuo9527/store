@@ -1,0 +1,54 @@
+
+.nav_container{
+text-align: center;border-bottom: solid 1px #d7d7d7;background: #f9f9f9;z-index: 3;width: 100%;
+}
+
+.back{
+    position:absolute; top:10px;width: 40px;text-align: center;
+}
+.big_price{
+        font-size: 23px;color: #f23030;display: inline-block;font-weight: bold;line-height: 23px;
+}
+.small_price{
+    font-size: 17px;color: #f23030;display: inline-block;line-height: 17px;font-weight: bold;margin-left:-4px; 
+}
+.price{
+    margin-top:10px; margin-left:10px;
+}
+.act{
+    font-size: 13px;
+    color: #81838e;
+    margin-top: 5px; 
+    margin-left:10px;
+    margin-right:10px;
+    margin-bottom: 10px;
+    line-height: 17px;
+    text-align: justify;
+}
+.contact{
+    background: dodgerblue;color: white;font-size: 18px;padding-top: 15px;padding-bottom: 15px;
+}
+.shopping_car{
+    background: #ffb03f;color: white;font-size: 18px;padding-top: 15px;padding-bottom: 15px;
+}
+.buy{
+    background: #f23030;color: white;font-size: 18px;padding-top: 15px;padding-bottom: 15px;
+}
+.footer{
+    position: fixed;bottom: 0;width: 100%;z-index: 3;
+}
+.footer a{
+    padding-left: 0;
+    padding-right: 0;
+}
+
+select{
+  padding: 0;margin: 0;  outline: none;font-size: 14px;font-weight:bold;  margin-top:10px; border: 1px solid orange;color:orange; padding-left:10px !important;
+}
+select {
+  appearance:none;
+  -moz-appearance:none;
+  -webkit-appearance:none;
+ 
+}
+select::-ms-expand { display: none; }

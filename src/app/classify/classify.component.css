@@ -1,0 +1,18 @@
+.commodity_title{
+    height:40px;overflow:hidden;-webkit-line-clamp:2;display:-webkit-box;-webkit-box-orient:vertical;color: black;
+}
+.commodity_price{
+    margin-bottom:6px;margin-top:10px; color: red;font-size:16px;font-weight: bold;
+}
+.commodity_mode{
+    margin-bottom:6px;margin-top:13px;color:black;font-size:12px;
+}
+.classcontainer{
+    overflow:auto;
+}
+.classcontainer h6{
+    margin-bottom:7px;
+}
+.nav_a a:hover{
+    color: crimson;
+}

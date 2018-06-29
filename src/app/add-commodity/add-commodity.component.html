@@ -1,0 +1,125 @@
+<div class="container col-xs-12 col-sm-6 col-md-4 col-lg-4" style="margin-top: 5px;margin-bottom: 5px;">
+<p>商品类class:</p>
+<select  class="col-xs-9"  [(ngModel)]="class" style="padding: 0;margin-top:0;height: 40px;">
+<option *ngFor="let cla of classes" [value] ="cla">{{cla}}</option>
+</select>
+</div> 
+
+<div class="container col-xs-12 col-sm-6 col-md-4 col-lg-4" style="margin-top: 5px;margin-bottom: 5px;">
+<p>图片文件夹名(必须先填文件夹名再去选图片)：</p>
+<input [(ngModel)]="imgname" type="text"  multiple>
+</div>
+
+<div class="container col-xs-12 col-sm-6 col-md-4 col-lg-4" style="margin-top: 5px;margin-bottom: 5px;">
+<p>标题title:</p>
+<input [(ngModel)]="title"  type="text">
+</div> 
+
+<div class="container col-xs-12 col-sm-6 col-md-4 col-lg-4" style="margin-top: 5px;margin-bottom: 5px;">
+<p>首页图片/列表图片picture:</p>
+<input id="picture" (change)="leadinginpicture()"  type="file">
+</div> 
+
+<div class="container col-xs-12 col-sm-6 col-md-4 col-lg-4" style="margin-top: 5px;margin-bottom: 5px;">
+<p>首页价格/列表价格price:</p>
+<input [(ngModel)]="price" type="text">
+</div> 
+<!--<div class="container col-xs-12 col-sm-6 col-md-4 col-lg-4" style="margin-top: 5px;margin-bottom: 5px;">
+<p>首页价格/列表价格price_2:</p>
+<input [(ngModel)]="price_2" type="text">
+</div> -->
+
+<div class="container col-xs-12 col-sm-6 col-md-4 col-lg-4" style="margin-top: 5px;margin-bottom: 5px;">
+<p>运输(包邮)mode:</p>
+<input  [(ngModel)]="mode" type="text">
+</div> 
+<div class="container col-xs-12 col-sm-6 col-md-4 col-lg-4" style="margin-top: 5px;margin-bottom: 5px;">
+<p>列表多少人付款PurchasingVolume:</p>
+<input [(ngModel)]="PurchasingVolume" type="text">
+</div> 
+<div class="container col-xs-12 col-sm-6 col-md-4 col-lg-4" style="margin-top: 5px;margin-bottom: 5px;">
+<p>商品发货地址(深圳)address:</p>
+<input  [(ngModel)]="address" type="text">
+</div> 
+<br>
+<div class="container col-xs-12 col-sm-6 col-md-4 col-lg-4" style="margin-top: 5px;margin-bottom: 5px;">
+<p>商品页面标题title2:</p>
+<input [(ngModel)]="title2" type="text">
+</div> 
+<!--<div class="container col-xs-12 col-sm-6 col-md-4 col-lg-4" style="margin-top: 5px;margin-bottom: 5px;">
+<p>商品描述act:</p>
+<input [(ngModel)]="act" type="text">
+</div> -->
+<div class="container col-xs-12 col-sm-6 col-md-4 col-lg-4" style="margin-top: 5px;margin-bottom: 5px;">
+<p>商品价格bigprice:</p>
+<input [(ngModel)]="bigprice" type="text">
+</div> 
+<div class="container col-xs-12 col-sm-6 col-md-4 col-lg-4" style="margin-top: 5px;margin-bottom: 5px;">
+<p>商品价格(不要小数点就填00)smallprice:</p>
+<input [(ngModel)]="smallprice"  type="text">
+</div> 
+<div class="container col-xs-12 col-sm-6 col-md-4 col-lg-4" style="margin-top: 5px;margin-bottom: 5px;">
+<p>商品页面头部滑动图片pictures:</p>
+<input id="pictures" (change)="leadinginpictures()" type="file" multiple>
+</div> 
+<div class="container col-xs-12 col-sm-6 col-md-4 col-lg-4" style="margin-top: 5px;margin-bottom: 5px;">
+<p>商品类型描述bewrite:</p>
+<input [(ngModel)]="bewrite" type="text">
+</div> 
+<div class="container col-xs-12 col-sm-6 col-md-4 col-lg-4" style="margin-top: 5px;margin-bottom: 5px;">
+<p>商品牌子brand:</p>
+<input [(ngModel)]="brand" type="text">
+</div> 
+<div class="container col-xs-12 col-sm-6 col-md-4 col-lg-4" style="margin-top: 5px;margin-bottom: 5px;">
+<p>商品型号model:</p>
+<input  [(ngModel)]="model" type="text">
+</div> 
+<div class="container col-xs-12 col-sm-6 col-md-4 col-lg-4" style="margin-top: 5px;margin-bottom: 5px;">
+<p>商品体积volume:</p>
+<input [(ngModel)]="volume" type="text">
+</div> 
+<div class="container col-xs-12 col-sm-6 col-md-4 col-lg-4" style="margin-top: 5px;margin-bottom: 5px;">
+<p>商品用途功效function:</p>
+<input [(ngModel)]="fn" type="text">
+</div> 
+<div class="container col-xs-12 col-sm-6 col-md-4 col-lg-4" style="margin-top: 5px;margin-bottom: 5px;">
+<p>商品适用人群Applicable:</p>
+<input [(ngModel)]="Applicable" type="text">
+</div> 
+<div class="container col-xs-12 col-sm-6 col-md-4 col-lg-4" style="margin-top: 5px;margin-bottom: 5px;">
+<p>商品保质期quality:</p>
+<input [(ngModel)]="quality" type="text">
+</div> 
+<div class="container col-xs-12 col-sm-6 col-md-4 col-lg-4" style="margin-top: 5px;margin-bottom: 5px;">
+<p>商品出产地place:</p>
+<input [(ngModel)]="place" type="text">
+</div> 
+<!--<div class="container col-xs-12 col-sm-6 col-md-4 col-lg-4" style="margin-top: 5px;margin-bottom: 5px;">
+<p>商品其他描述(存放图片文字)other:</p>
+<p>#购物中遇到任何问题可联系客服,感谢你的光临！</p>
+<textarea [(ngModel)]="other" rows="4" class="col-xs-10" >   </textarea>-->
+<!--<input [(ngModel)]="other"  type="text" >
+</div>-->
+<div class="container col-xs-12 col-sm-6 col-md-4 col-lg-4" style="margin-top: 5px;margin-bottom: 5px;">
+<p>导入商品内容图片</p>
+<input  id="imgs"  type="file"  (change)="console()" multiple>
+</div> 
+
+<div class="container col-xs-12 col-sm-6 col-md-4 col-lg-4" style="margin-top: 5px;margin-bottom: 5px;">
+<p>商品款式-颜色-型号分裂models:</p>
+<p>如果没有款式分类可以为空(填写格式每个款式用#隔开)</p>
+<textarea [(ngModel)]="types" rows="4" class="col-xs-10" >   </textarea>
+<!--<input [(ngModel)]="types"  type="text" >-->
+</div> 
+
+<div class="container col-xs-12 col-sm-6 col-md-4 col-lg-4" style="margin-top: 5px;margin-bottom: 5px;">
+<button class="btn btn-lg col-xs-6" (click)="add()">上传</button>
+</div> 
+<div class="container col-xs-12 col-sm-6 col-md-4 col-lg-4" style="margin-top: 5px;margin-bottom: 5px;">
+<button class="btn btn-lg col-xs-6" (click)="console()">打印</button>
+</div> 
+
+
+<!--<div class="container col-xs-12 col-sm-6 col-md-4 col-lg-4" style="margin-top: 5px;margin-bottom: 5px;">
+<textarea [(ngModel)]="other" rows="3" class="col-xs-9" >{{other}}</textarea>
+</div> -->
